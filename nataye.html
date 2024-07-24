@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Ndarangisha -- website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="myBody">
+   <div class="container">
+    <div class="header">
+        <div class="logo-page">
+            <div class="logo">
+    <img src="logo.jfif" alt=""></div>
+    <h2 class="heading">Ndarangisha</h2>
+        </div>
+<div class="navbar" id="navbar">
+    <ul >
+        <li><a href="indexs.html" id="navbar">IBYANGOMBWA</a></li>
+        <li><a href="nataye.html" id="navbar">NATOYE</a></li>
+        <li><a href="natoraguye.html" id="navbar">NATORAGUYE</a></li>
+    </ul>
+</div>
+<div class="search">
+    <input type="search" name="search" id="" placeholder="shaka hano" class="input"> <button class="button">search</button>
+</div>
+<a href="javascript:void(0);" onclick="myFunctions()" class="bars">
+   <i class="fa fa-bars bar" ></i></a>
+
+    </div>
+   <!-- contents -->
+<div class="form-content">
+   
+    <h2>NATAYE</h2>
+<br>
+    <h2>UMWIRONDORO</h2>
+   
+    <div class="form">
+        <form action="" method="post">
+            <div class="form-group">
+ <label>AMAZINA</label><br>
+            <input type="text" name="amazina">
+            </div>
+           <div class="form-group">
+                  <label>Telephone</label><br>
+            <input type="text" name="amazina">
+           </div>
+      <div class="form-group">
+        <label>INTARA</label><br>
+            <input type="text" name="amazina">
+      </div>
+            <div class="form-group">
+             <label>AKARERE</label><br>
+            <input type="text" name="amazina">    
+            </div>
+           <div class="form-group">
+               <label>UMURENGE</label><br>
+            <input type="text" name="amazina">
+           </div>
+         <div class="form-group">
+            <label>AKAGALI</label><br>
+            <input type="text" name="amazina"> 
+         </div>
+           <div class="form-group">
+            <label>UMUDUGURA</label><br>
+            <input type="text" name="amazina"> 
+           </div>
+           
+        </form>
+       
+    </div>
+    <br>
+    <h2>IBIRANGA ICYANGOMBWA</h2>
+    <div class="form">
+        <form action="" method="post">
+            <div class="form-group">
+ <label>IBYANGOMBWA</label><br>
+            <select name="" id="" value="hitamo ubwoko bw'icyangombwa">
+<option value="">hitamo ubwoko bw'icyangombwa</option>
+<option value="">Indangamuntu</option>
+<option value="">Mutuelle</option>
+<option value="">RAMA</option>
+<option value="">Ikarita ya bank</option>
+<option value="">Uruhushya rwa burundu</option>
+<option value="">RAMA</option>
+<option value="">Icyangombwa cy'urugendo(Passport)</option>
+            </select>
+            </div>
+           <div class="form-group">
+                  <label>Telephone</label><br>
+            <input type="number" name="tel" placeholder="***********">
+           </div>
+      <div class="form-group">
+        <label>Igihe utangiye icyangombwa</label><br>
+            <input type="date" name="date">
+      </div>
+
+           
+        </form>
+        <br><br>
+        <button class="btn">emeza</button>
+    </div>
+</div>
+
+
+    <!-- end of contents -->
+
+
+
+    
+ 
+   </div>  <!-- button -->
+      <div class="change nataye" onclick="myFunction()" >
+            <a ><i class="fa-solid fa-moon moon" id="change"></i></a>
+      </div>
+   <style>
+  
+
+   </style>
+   <script>
+    function myFunction(){
+        document.getElementById("myBody").classList.toggle("myStyle");
+        document.getElementById("change").classList.toggle("myChange");
+        document.getElementById("navbar").classList.toggle("myNavbar");
+    }
+    function myFunctions() {
+  var x = document.getElementById("navbar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    x.classList.add("bar_move");
+  } else {
+    x.style.display = "block";
+    x.classList.add("bar_move");
+  }
+}
+   </script>
+</body>
+</html>

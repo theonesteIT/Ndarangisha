@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Ndarangisha -- website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="myBody">
+   <div class="container">
+    <div class="header">
+        <div class="logo-page">
+            <div class="logo">
+    <img src="logo.jfif" alt=""></div>
+    <h2 class="heading">Ndarangisha</h2>
+        </div>
+<div class="navbar" id="navbar">
+    <ul >
+        <li><a href="admin.html" id="navbar">DASHBOARD</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">NATAYE</a>
+            <div class="dropdown-content">
+                <a href="admin_nataye.html">IMYIRONDORO</a>
+                <a href="admin_nataye_ibyangombwa.html">IBYANGOMBWA</a>
+               
+              </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" id="navbar">NATORAGUYE</a>
+            <div class="dropdown-content">
+                <a href="admin_nataye.html">IMYIRONDORO</a>
+                <a href="admin_natoye_ibyangombwa.html">IBYANGOMBWA</a>
+            </div>
+        </li>
+        <li><a href="signup.html" id="navbar">ADD_USER</a></li>
+    </ul>
+</div>
+<div class="search">
+    <input type="search" name="search" id="" placeholder="shaka hano" class="input"> <button class="button">search</button>
+</div>
+<a href="javascript:void(0);" onclick="myFunctions()" class="bars">
+   <i class="fa fa-bars bar" ></i></a>
+
+    </div>
+    <!-- contents -->
+
+    <div class="form-content">
+        <div class="table">
+
+       <h2>Ibyatoraguwe Byose</h2>
+       <table border="1">
+        <tr>
+            <td>AMAZINA</td>
+            <td>IBYANGOMBWA</td>
+            <td>TELEPHONE</td>
+            <td>IFOTO</td>
+            <td>NUMERO TWAKUBONAHO</td>
+            <td colspan="2">ACTION</td>
+        </tr>
+        <tr>
+            <td>AMAZINA</td>
+            <td>IBYANGOMBWA</td>
+            <td>TELEPHONE</td>
+            <td>IFOTO</td>
+            <td>NUMERO TWAKUBONAHO</td>
+           
+            <td> <button class="btn" style="background-color: red;"> <a href="">Delete</a></button></td>
+            <td> <button class="btn"> <a href="">Update</a></button></td>
+        </tr>
+       </table>
+    </div>
+</div>
+     <!-- <div class="content">
+        <div class="content-text">
+            <h1>KORESHA GAHUNDA YA NDARANGISHA MAZE UBONE IBYANGOMBWA BYATORAGUWE NDETSE BYATAKAYE</h1>
+            <p>Ndarangisha ni gahunda yifashisha urusobe rwa mudasobwa na murandasi 
+                bityo igafasha abantu kubona ibyangombwa byabo byatakaye n ibyatoraguwe ndetse no guhuza ababuranye n ababo.</p>
+        </div>
+        <div class="content-img">
+            <img src="lost.jpeg" alt="">
+        </div>
+     </div> -->
+     <!-- button -->
+      <div class="change" onclick="myFunction()" >
+            <a ><i class="fa-solid fa-moon moon" id="change"></i></a>
+      </div>
+ 
+   </div> 
+   <style>
+  
+
+   </style>
+   <script>
+    function myFunction(){
+        document.getElementById("myBody").classList.toggle("myStyle");
+        document.getElementById("change").classList.toggle("myChange");
+        document.getElementById("navbar").classList.toggle("myNavbar");
+    }
+    function myFunctions() {
+  var x = document.getElementById("navbar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    x.classList.add("bar_move");
+  } else {
+    x.style.display = "block";
+    x.classList.add("bar_move");
+  }
+}
+   </script>
+</body>
+</html>
